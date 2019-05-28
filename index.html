@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Country Details</title>
+<link rel="stylesheet" type="text/css" href="search.css">
+<script src="javascript.js"></script>
+<style>
+body{
+    margin-top:20px;
+    background-color:#eecce4;}
+marquee{
+    font-size: 50px;}
+@media screen and (max-width:600px){
+marquee{
+    font-size:30px;}
+b.txt{
+    font-size:30px;}
+body{
+    background-color: #d0ccf3;}
+}
+</style>
+</head>
+<body>
+    <div class="center">
+    <b class="txt">SEARCH HERE TO GET THE COUNTRY DETAILS</b></div><br>
+</div>
+<form name="myForm" method="GET">
+<input type ="text" id="mySearch" placeholder = "Type the Country name here...!!!" onclick="this.select()">
+<input type ="button" id="bt1" value="search" name = "search" onClick="getSearchText() ; showDiv();">
+</form></br>
+<div id="welcomeDiv"  style="display:none;" >
+<marquee width="100%" direction="left" height="30%" scrollamount="15">
+Please Click on the Country flag||Country name to get more details about the Country...!!!</marquee>
+</div>
+<p id="contname"></p>
+</body>
+</html>
