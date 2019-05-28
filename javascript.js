@@ -17,7 +17,7 @@ h4{
   font-size:40px;}
 </style>
   <div class="card">
-  <a href="details.html" target="_blank">
+  <a href="details.html">
   <img src="${user.flag}" alt="Avatar" style="width:100%">
   <div class="container">
   <h4><b>${user.name}</b></h4>     
@@ -135,4 +135,7 @@ function getcountrydetails(){
  var ret = localStorage.getItem('ret');
     // console.log(ret);
  document.getElementById('mycon').innerHTML=ret;
+}
+function goBack() {
+  window.history.back();
 }
