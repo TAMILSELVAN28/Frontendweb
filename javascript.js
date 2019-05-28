@@ -120,8 +120,7 @@ b{
    return "Acronym: "+user.acronym+" "+"Name: "+user.name+" "
   }).join('')}"</td>
   </tr>
-  </table>
-    `
+  </table>`
     localStorage.setItem('ret', resultss);
    // console.log(resultss);
       });
