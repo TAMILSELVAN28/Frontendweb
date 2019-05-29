@@ -127,6 +127,7 @@ b{
       document.getElementById('contname').innerHTML=output;
   })
   .catch((err)=>{
+    document.getElementById('welcomeDiv').style.display = "none";
     alert("no country");
   });
 }
